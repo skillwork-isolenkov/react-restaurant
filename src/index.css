@@ -1,0 +1,1087 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #E6E6E6;
+}
+.navbar img{
+  height: 100px;
+  width: 100px;
+}
+
+.navbar ul, li{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.navbar a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #FF7F27;
+  border-bottom: 2px solid #FF7F27;
+  padding: 2px;
+}
+
+#burger-menu{
+  display: none;
+}
+
+/* Home */
+.home{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  background-image: url('./Components/img/banner.jpg');
+  background-position-x: center;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100%;
+}
+.home h2{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.home p, .home h2{
+  letter-spacing: 10px;
+}
+.home .btn{
+  color: white;
+  background-color: #FF7F27;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.home .btn:hover{
+  transition: 1s all ease-out;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+/* About */
+.about-us{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+}
+.about-history h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.about-history p{
+  font-size: 13px;
+  width: 400px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.paragraphs p{
+  display: flex;
+  flex-flow: row wrap;
+  width: 500px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #686868;
+  font-style: italic;
+}
+
+/* Images */
+.images{
+  margin-left: 50px;
+}
+.about-main{
+  border-radius: 50%;
+  border: 5px solid #FF7F27;
+}
+.about-inset{
+  border-radius: 50%;
+  border: 5px solid #FF7F27;
+  position: relative;
+  right: 111px;
+}
+
+/* Today's Special */
+.todays-special{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.todays-special h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.todays-special p{
+  font-size: 20px;
+  text-align: center;
+  width: 800px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.special-images{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.special-images img{
+  height: 435px;
+  width: 342px;
+  border: 5px solid #FF7F27;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Menu */
+.menu{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #E6E6E6;
+  height: 95vh;
+}
+.menu h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+  margin-top: 3%;
+}
+.main-paragraph{
+  color: #666;
+  font-size: 18px;
+  letter-spacing: 0.16px;
+  text-align: center;
+  width: 900px;
+}
+
+.tab-menu{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.slider-nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.slider-nav li{
+  margin-right: 70px;
+}
+.slider-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.slider-nav a:hover{
+  color: #FF7F27;
+  border-bottom: 2px solid #FF7F27;
+  padding: 2px;
+}
+
+.starters, .main-dishes, .deserts, .drinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-main, .slider-deserts, .slider-drinks{
+  display: none;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.slider-starters{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.slider-starters img, .slider-main img, .slider-deserts img, .slider-drinks img{
+  width: 20%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.slider-starters h3 , .slider-main h3 , .slider-deserts h3, .slider-drinks h3{
+  color: #FF7F27;
+  font-style: italic;
+}
+.slider-starters p , .slider-main p, .slider-deserts p, .slider-drinks p{
+  color: #6b6b6b;
+  width: 350px;
+}
+.slider-starters span , .slider-main span, .slider-deserts span, .slider-drinks span{
+  border: 3px solid #FF7F27;
+  border-radius: 15px;
+  width: 92px;
+  line-height: 100px;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.first-row, .second-row{
+  display: flex;
+  align-items: center;
+}
+
+.first-row{
+  margin-top: 5%;
+}
+
+.first-dish, .second-dish, .third-dish, .fourth-dish{
+  display: flex;
+  flex-direction: row wrap;
+}
+
+.first-dish, .third-dish{
+  margin-right: 50px;
+}
+.first-dish, .second-dish{
+  margin-bottom: 50px;
+}
+
+/* Team */
+.team img{
+  width: 310px;
+  height: 240px;
+  border: 5px solid #FF7F27;
+}
+
+.team-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+
+.our-team{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.tom-div, .ursula-div, .second-tom-div, .jack-div, .jonathan-div, .jenny-div, .gary-div, .danny-div, .kitchen-team-div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tom-sec-div, .ursula-sec-div, .second-tom-sec-div, .jack-sec-div, .jonathan-sec-div, .jenny-sec-div, .gary-sec-div, .danny-sec-div, .kitchen-sec-div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tom-div p, .second-tom-div p, .jonathan-div p, .gary-div p, .kitchen-team-div p{
+  width: 350px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.ursula-div p, .jack-div p, .jenny-div p, .danny-div p{
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.join-team{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+
+.join-team h3{
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.join-team .careers-btn{
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF7F27;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.join-team .careers-btn:hover{
+  transition: 1s ease-in-out;
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+/* Gallery */
+.gallery{
+  background-color: #E6E6E6;
+}
+.gallery h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.gallery p{
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.head-elements{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.food-images{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.first-part-img, .second-part-img, .third-part-img, .fourth-part-img{
+  margin-bottom: 15px;
+}
+
+.photo-1, .photo-7{
+  height: 350px;
+  width: 730px;
+  border: 5px solid #FF7F27;
+  margin-right: 3px;
+}
+.photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-8, .photo-9, .photo-10{
+  height: 350px;
+  width: 360px;
+  border: 5px solid #FF7F27;
+  margin-right: 3px;
+}
+
+/* Blog */
+.blog{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-image: url(./Components/img/blog/blog-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-size: 14px;
+}
+.blog h2{
+  color: #FF7F27;
+  font-size: 42px;
+  margin-top: 3%;
+}
+.latest-recipes, .new-recruits, .baking-tips, .eggs{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.first-blog, .second-blog, .third-blog, .fourth-blog{
+  background: white;
+  color: black;
+  width: 240px;
+  height: 77%;
+  text-align: center;
+  padding: 65px 1% 0px;
+  font-size: 24px;
+  margin-right: 25px;
+}
+.first-blog h4, .second-blog h4, .third-blog h4, .fourth-blog h4{
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.first-blog p, .second-blog p, .third-blog p, .fourth-blog p{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.first-blog span, .second-blog span, .third-blog span, .fourth-blog span{
+  color: rgb(204, 204, 204);
+  font-size: 12px;
+}
+
+.first-line, .second-line{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog .btn{
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF7F27;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 72px;
+  text-decoration: none;
+}
+
+.blog .btn:hover{
+  transition: 1s ease-in-out;
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* Reservation */
+.reservation{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 90vh;
+  background-color: #E6E6E6;
+}
+.reservation h2{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 42px;
+}
+.reservation h4{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reservation p{
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form{
+  margin-top: 20px;
+}
+
+.name-email, .number-persons, .date-time{
+  display: flex;
+}
+
+.input-name, .input-email, .input-number, #persons, .input-date, .input-time{
+  border: 2px dotted #ccc;
+  background: #f5f5f5;
+  color: #202020;
+  padding: 12px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-number{
+  width: 150px;
+}
+
+.reservation button{
+  color: white;
+  background-color: #FF7F27;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 90px;
+  border: none;
+  border-radius: 5px;
+}
+.reservation button:hover{
+  transition: 1s all ease-out;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.message{
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Contact */
+.contact-main{
+  background-image: url(./Components/img/contact/newsletter-bg.png);
+  background-position-x: center;
+  background-position-y: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.elements{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.elements h2{
+  color: white;
+  font-size: 60px;
+}
+.elements p{
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.email-bar input{
+  width: 100%;
+  border: 2px dotted #ccc;
+  background: #f5f5f5;
+  color: #202020;
+  padding: 12px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin-top: 42px;
+}
+.email-bar a{
+  position: relative;
+  bottom: 47px;
+  left: 295px;
+  background: #FF7F27;
+  border: 2px dotted #ccc;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.message{
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contact-footer{
+  background-image: url(./Components/img/contact/footer_background.jpg);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.navbar-elements{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.contact-footer img{
+  height: 200px;
+  width: 240px;
+}
+.orange{
+  font-family: 'Akaya Telivigala', cursive;
+  color: #FF7F27;
+  font-size: 30px;
+}
+.about-contact{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.about-contact h3{
+  margin-bottom: 50px;
+}
+.about-contact p{
+  width: 300px;
+}
+
+.new-menu{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.new-menu li{
+  padding: 5px;
+}
+
+.new-menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.contact-us, .hours{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.contact-us li{
+  padding: 5px;
+}
+.contact-us h3{
+  margin-bottom: 20px;
+}
+.contact-us a{
+  color: white;
+  text-decoration: none;
+}
+.contact-us i{
+  font-size: 20px;
+}
+.contact-us .fa{
+  color: #FF7F27;
+}
+
+.hours h3{
+  margin-bottom: 10px;
+}
+.hours h4{
+  margin-top: 10px;
+}
+.hours span{
+  color: #666;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+   /* Navigation */
+   .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation{
+  width: 100%;
+}
+
+.navigation ul{
+    display: none;
+    background-color: #202020;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+}
+.navigation li{
+    padding: 5px 0px;
+}
+.navigation li:hover{
+    border-bottom: 2px solid #FF7F27;
+    color: #FF7F27;
+}
+.navigation a{
+    color: white;
+}
+.navigation a:hover{
+    color: #FF7F27;
+}
+
+#burger-menu{
+    display: flex;
+    font-size: 45px;
+    color: black;
+}
+
+/* Home */
+.home{
+  text-align: center;
+  width: 100%;
+}
+
+.home h2{
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.home p{
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.home .btn{
+  padding: 17px;
+  font-size: 17px;
+}
+
+/* About */
+.about-history h2{
+  font-size: 35px;
+}
+.about-history p{
+  width: 300px;
+}
+
+.about-elements{
+  text-align: center;
+}
+
+.paragraphs{
+  font-size: 10px;
+}
+.paragraphs p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.about-main{
+  margin-right: 30px;
+}
+.about-inset{
+  position: inherit;
+  margin-right: 30px;
+}
+.images img{
+  width: 120px;
+  height: 120px;
+}
+
+.todays-special h2{
+  font-size: 35px;
+}
+.todays-special p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.special-images{
+  display: flex;
+  flex-flow: row wrap;
+}
+.special-images img{
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+/* Menu */
+.menu{
+  height: auto;
+}
+.menu h2{
+  font-size: 35px;
+}
+.main-paragraph{
+  width: 300px;
+  font-size: 15px;
+}
+
+.slider-nav ul{
+  margin-left: 20px;
+}
+.slider-nav li{
+  margin: 0;
+}
+.slider-nav a{
+  font-size: 20px;
+}
+
+.first-row, .second-row{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.slider-starters h3, .slider-main h3, .slider-deserts h3, .slider-drinks h3{
+  font-size: 17px;
+}
+.slider-starters p, .slider-main p, .slider-deserts p, .slider-drinks p{
+  width: 150px;
+  font-size: 12px;
+}
+.slider-starters img, .slider-main img, .slider-deserts img, .slider-drinks img {
+  height: 75px;
+  width: 75px;
+}
+.slider-starters span, .slider-main span, .slider-deserts span, .slider-drinks span{
+  width: 65px;
+  font-size: 20px;
+}
+.first-dish, .second-dish, .third-dish, .fourth-dish{
+  margin-bottom: 20px;
+}
+.first-dish, .third-dish{
+  margin-right: 15px;
+}
+
+/* Team */
+.our-team{
+  font-size: 35px;
+}
+
+.team-div img{
+  height: 210px;
+  width: 300px;
+}
+
+.about-us-div{
+  margin-top: 30px;
+}
+
+.about-us-div p, .jack-div p{
+  width: 300px;
+  font-size: 13px;
+}
+
+.team-div img, .jack-div p{
+  margin-bottom: 50px;
+  margin-left: 40px;
+  font-size: 13px;
+}
+
+.tom-div p, .second-tom-div p, .jonathan-div p, .gary-div p{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 13px;
+}
+
+.ursula-div p, .jenny-div p, .danny-div p{
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+/* Gallery */
+.gallery h2{
+  font-size: 35px;
+}
+.gallery p{
+  margin-left: 20px;
+}
+
+.head-elements h2{
+  font-size: 35px;
+}
+
+.food-images img{
+  height: 120px;
+  width: 100px;
+}
+
+/* Blog */
+.blog{
+  background-image: none;
+  background-color: black;
+  flex-flow: column;
+  height: 115vh;
+}
+.blog h2{
+  font-size: 35px;
+}
+.blog img{
+  height: 120px;
+  width: 153px;
+}
+
+.first-line, .second-line{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 20px;
+}
+
+.latest-recipes, .new-recruits, .baking-tips, .eggs{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.first-blog, .second-blog, .third-blog, .fourth-blog {
+  width: 150px;
+  padding: 40px 1% 0px;
+}
+.first-blog h4, .second-blog h4, .third-blog h4, .fourth-blog h4{
+  font-size: 12px;
+}
+.first-blog p, .second-blog p, .third-blog p, .fourth-blog p{
+  font-size: 17px;
+}
+
+/* Reservation */
+.reservation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservation h2{
+  font-size: 35px;
+}
+.reservation h4{
+  font-size: 18px;
+}
+.reservation p{
+  font-size: 11px;
+}
+.reservation button{
+  margin-left: 25px;
+  font-size: 17px;
+  padding: 13px;
+}
+
+.contact-form{
+  margin-right: 20px;
+}
+
+.name-email, .number-persons, .date-time{
+  display: block;
+}
+.input-name, .input-email, .input-number, #persons, .input-date, .input-time{
+  display: block;
+  width: 100%;
+  align-items: center;
+  margin-right: 0;
+}
+
+/* Contact */
+.contact-main{
+  background-attachment: inherit;
+}
+
+.elements h2{
+  font-size: 35px;
+}
+.elements p {
+  font-size: 14px;
+}
+
+.email-bar input {
+  width: 75%;
+  margin-top: 90px;
+}
+.email-bar a{
+  left: 175px;
+}
+
+.contact-footer{
+  height: inherit;
+}
+.contact-footer img{
+  height: 150px;
+  width: 150px;
+}
+
+.about-contact{
+  align-items:flex-start;
+  margin-left: 15px;
+}
+.about-contact h3 {
+  margin-bottom: 15px;
+}
+
+.new-menu{
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.contact-us{
+  font-size: 17px;
+  padding: 0;
+}
+.contact-us, .hours {
+  align-items: flex-start;
+  margin-left: 15px;
+}
+}
+
+/* Landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  /* About Us */
+  .about-us{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.todays-special{
+    justify-content: flex-start;
+    margin-left: 65px;
+}
+
+/* Menu */
+.first-row, .second-row{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Blog */
+  .blog{
+      height: auto;
+  }
+
+/* Reservation */
+.name-email, .number-persons, .date-time{
+  display: flex;
+}
+
+.input-name, .input-number, .input-date{
+  margin-right: 20px;
+}
+
+.reservation button{
+  margin-left: 90px;
+}
+
+/* Contact Us */
+.contact-main{
+  height: 75vh;
+}
+
+.email-bar input {
+  margin-top: 40px;
+}
+
+}
