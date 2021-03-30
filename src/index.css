@@ -205,6 +205,9 @@ code {
 .slider-nav li{
   margin-right: 70px;
 }
+.slider-nav li:hover{
+  cursor: pointer;
+}
 .slider-nav a{
   text-decoration: none;
   color: black;

@@ -63,20 +63,20 @@ const Menu = () => {
             <div className="tab-menu">
                 <div className="slider-nav">
                     <ul>
-                        <li className="starters">
-                            <a href="true" onClick={starterButton} id="starters">Starters</a>
+                        <li onClick={starterButton} className="starters">
+                            <a href="true" id="starters">Starters</a>
                             <img src={starters} alt="starters" />
                         </li>
-                        <li className="main-dishes">
-                            <a href="true" onClick={mainButton} id="main-dishes">Main Dishes</a>
+                        <li onClick={mainButton} className="main-dishes">
+                            <a href="true" id="main-dishes">Main Dishes</a>
                             <img src={mainDishes} alt="main-dishes" />
                         </li>
-                        <li className="deserts">
-                            <a href="true" onClick={desertButton} id="deserts">Deserts</a>
+                        <li onClick={desertButton} className="deserts">
+                            <a href="true" id="deserts">Deserts</a>
                             <img src={deserts} alt="deserts" />
                         </li>
-                        <li className="drinks">
-                            <a href="true" onClick={drinksButton} id="drinks">Drinks</a>
+                        <li onClick={drinksButton} className="drinks">
+                            <a href="true" id="drinks">Drinks</a>
                             <img src={drinks} alt="drinks" />
                         </li>
                     </ul>
