@@ -393,6 +393,10 @@ code {
   margin-bottom: 15px;
 }
 
+.photo-1:hover, .photo-2:hover, .photo-3:hover, .photo-4:hover, .photo-5:hover, .photo-6:hover, .photo-7:hover, .photo-8:hover, .photo-9:hover, .photo-10:hover{
+  filter: blur(3px);
+}
+
 .photo-1, .photo-7{
   height: 350px;
   width: 730px;
@@ -426,6 +430,9 @@ code {
   display: flex;
   align-items: center;
   margin-top: 5%;
+}
+.latest-recipes img:hover, .new-recruits img:hover, .baking-tips img:hover, .eggs img:hover{
+  filter: brightness(0.5);
 }
 
 .first-blog, .second-blog, .third-blog, .fourth-blog{
