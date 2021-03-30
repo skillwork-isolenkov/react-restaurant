@@ -488,6 +488,7 @@ code {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  text-align: center;
   height: 90vh;
   background-color: #E6E6E6;
 }
@@ -515,6 +516,7 @@ code {
 
 .name-email, .number-persons, .date-time{
   display: flex;
+  margin-bottom: 15px;
 }
 
 .input-name, .input-email, .input-number, #persons, .input-date, .input-time{
@@ -526,11 +528,15 @@ code {
   border-radius: 4px;
   margin-right: 15px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 300px;
+  font-size: 18px;
 }
 
-.input-number{
-  width: 150px;
+.input-email{
+  width: 295px;
+}
+#persons{
+  width: 325px;
 }
 
 .reservation button{
@@ -540,7 +546,6 @@ code {
   text-transform: uppercase;
   padding: 15px;
   margin-top: 20px;
-  margin-left: 90px;
   border: none;
   border-radius: 5px;
 }
@@ -600,12 +605,12 @@ code {
 }
 .email-bar a{
   position: relative;
-  bottom: 47px;
-  left: 295px;
+  bottom: 53px;
+  left: 300px;
   background: #FF7F27;
   border: 2px dotted #ccc;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 4px;
   color: #ffffff;
 }
@@ -970,13 +975,8 @@ code {
   font-size: 11px;
 }
 .reservation button{
-  margin-left: 25px;
   font-size: 17px;
   padding: 13px;
-}
-
-.contact-form{
-  margin-right: 20px;
 }
 
 .name-email, .number-persons, .date-time{
@@ -984,9 +984,12 @@ code {
 }
 .input-name, .input-email, .input-number, #persons, .input-date, .input-time{
   display: block;
-  width: 100%;
+  width: 250px;
   align-items: center;
   margin-right: 0;
+}
+#persons{
+  width: 278px;
 }
 
 /* Contact */
@@ -1006,7 +1009,8 @@ code {
   margin-top: 90px;
 }
 .email-bar a{
-  left: 175px;
+  left: 205px;
+  bottom: 53px;
 }
 
 .contact-footer{

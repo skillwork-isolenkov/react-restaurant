@@ -110,7 +110,7 @@ const Menu = () => {
                         <div className="third-dish">
                             <img src={chickenWings} alt="chicken-wings" />
                             <div>
-                                <h3>BBQ Chicken Wings</h3>
+                                <h3>Chicken Wings</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend dapibus.
                             </p>
