@@ -23,7 +23,7 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <div className="navbar">
-                <img src={logo} alt="logo" />
+                <Link to="/"><img src={logo} alt="logo" /></Link>
                 <a href="true" onClick={burgerButton} id="burger-menu"><FontAwesomeIcon icon={faBars} /></a>
                 <ul>
                     <li><Link to="/">Home</Link></li>

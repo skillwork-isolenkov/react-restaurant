@@ -98,9 +98,8 @@ code {
   background-color: #E6E6E6;
 }
 .about-history h2{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
 }
 .about-history p{
   font-size: 13px;
@@ -143,9 +142,8 @@ code {
   margin-top: 5%;
 }
 .todays-special h2{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
 }
 .todays-special p{
   font-size: 20px;
@@ -178,9 +176,8 @@ code {
   height: 95vh;
 }
 .menu h2{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
   margin-top: 3%;
 }
 .main-paragraph{
@@ -301,10 +298,8 @@ code {
 }
 
 .our-team{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
-  text-transform: uppercase;
+  font-size: 50px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -374,9 +369,8 @@ code {
   background-color: #E6E6E6;
 }
 .gallery h2{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
 }
 .gallery p{
   font-size: 13px;
@@ -419,13 +413,13 @@ code {
   align-items: center;
   background-image: url(./Components/img/blog/blog-bg.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 105vh;
   color: white;
   font-size: 14px;
 }
 .blog h2{
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
   margin-top: 3%;
 }
 .latest-recipes, .new-recruits, .baking-tips, .eggs{
@@ -493,9 +487,8 @@ code {
   background-color: #E6E6E6;
 }
 .reservation h2{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
-  font-size: 42px;
+  font-size: 50px;
 }
 .reservation h4{
   font-size: 20px;
@@ -585,7 +578,7 @@ code {
 }
 .elements h2{
   color: white;
-  font-size: 60px;
+  font-size: 50px;
 }
 .elements p{
   color: white;
@@ -637,6 +630,7 @@ code {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -645,10 +639,13 @@ code {
   width: 240px;
 }
 .orange{
-  font-family: 'Akaya Telivigala', cursive;
   color: #FF7F27;
   font-size: 30px;
 }
+.orange.contact{
+  margin-top: 0;
+}
+
 .about-contact{
   display: flex;
   flex-flow: column wrap;
@@ -683,9 +680,7 @@ code {
 
 .contact-us li{
   padding: 5px;
-}
-.contact-us h3{
-  margin-bottom: 20px;
+  align-items: center;
 }
 .contact-us a{
   color: white;
@@ -696,6 +691,7 @@ code {
 }
 .contact-us .fa{
   color: #FF7F27;
+  font-size: 20px;
 }
 
 .hours h3{

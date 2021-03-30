@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleRight, faLocationArrow, faMobile, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import lipsumTeams from '../img/lipsum-teams.png'
 import { useState } from 'react'
 
@@ -51,10 +51,10 @@ const Contact = () => {
                     </ul>
 
                     <ul className="contact-us">
-                        <h3 className="orange">Contact Us</h3>
-                        <li><i className="fa fa-location-arrow"></i> 685 Eva Pearl Street Baton Rouge LA</li>
-                        <li><i className="fa fa-mobile"></i>+359 87 6778588</li>
-                        <li> <i className="fa fa-envelope-square"></i> <a href="/">ivansolenkov99@gmail.com</a></li>
+                        <h3 className="orange contact">Contact Us</h3>
+                        <li><FontAwesomeIcon className="fa" icon={faLocationArrow} /> 685 Eva Pearl Street Baton Rouge LA</li>
+                        <li><FontAwesomeIcon className="fa" icon={faMobile} />+359 87 6778588</li>
+                        <li><FontAwesomeIcon className="fa" icon={faEnvelopeSquare} /> <a href="/">ivansolenkov99@gmail.com</a></li>
                     </ul>
 
                     <div className="hours">
