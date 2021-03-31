@@ -929,7 +929,7 @@ code {
   background-image: none;
   background-color: black;
   flex-flow: column;
-  height: 115vh;
+  height: 120vh;
 }
 .blog h2{
   font-size: 35px;
