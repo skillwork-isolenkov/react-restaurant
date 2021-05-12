@@ -173,7 +173,7 @@ code {
   flex-flow: column wrap;
   align-items: center;
   background-color: #E6E6E6;
-  height: 95vh;
+  height: 130vh;
 }
 .menu h2{
   color: #FF7F27;
@@ -417,7 +417,7 @@ code {
   align-items: center;
   background-image: url(./Components/img/blog/blog-bg.jpg);
   background-size: cover;
-  height: 105vh;
+  height: 150vh;
   color: white;
   font-size: 14px;
 }
